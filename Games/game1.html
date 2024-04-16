@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game 1</title>
+    <link rel="stylesheet" href="../Assets/style.css">
+    <style>
+        .game-content {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e94d58;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #c43e4d;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-content">
+        <h2 class="question">Do you wanna be my girlfriend?</h2>
+        <img class="gif" alt="gif" src="../Assets/giphy.gif">
+        <div class="btn-group">
+            <button class="yes-btn">Yes</button>
+            <button class="no-btn">No</button>
+        </div>
+        <a href="../index.html" class="back-btn">Back</a>
+    </div>
+    <script src="../Assets/game.js"></script>
+</body>
+</html>

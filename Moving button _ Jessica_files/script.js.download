@@ -5,7 +5,7 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "I love you too! 😘";
+  question.innerHTML = "Yipee! <br> (I love you too! 😘)";
   gif.src =
     "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExanN1bXI1bWNmOTdla2NwYmJ4cm8zdDh6cTBmYXZ1YXJrZThjcjRydiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QAn6JoVuABBEapYyX2/giphy.gif";
 });

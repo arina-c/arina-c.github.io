@@ -1,34 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Menu</title>
-    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Log In</title>
+    <link rel="stylesheet" href="Assets/FloatingHearts.css">
     <style>
-        .game-link {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #e94d58;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+        body {
+            background-color: #f3f4f4; /* Eggshell white background */
+
+            display: flex;
+            justify-content: center;
+            height: 100vh; /* Ensure full viewport height */
+            font-family: Arial, sans-serif; /* Use a common font */
         }
 
-        .game-link:hover {
-            background-color: #c43e4d;
+        .content {
+            text-align: center;
+            color: #e94d58; /* Accent color for text */
+        }
+
+        /* Style for the login form */
+        .login-form {
+            background-color: #fff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Padding around the form */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            max-width: 300px; /* Maximum width of the form */
+            margin: 0 auto; /* Center the form horizontally */
+        }
+
+        /* Style for input fields */
+        .login-form input[type="password"] {
+            width: 100%; /* Full width */
+            padding: 10px; /* Padding inside the input field */
+            margin-bottom: 15px; /* Spacing between input fields */
+            border: 1px solid #ccc; /* Border color */
+            border-radius: 5px; /* Rounded corners */
+            box-sizing: border-box; /* Include padding in width calculation */
+            transition: border-color 0.3s ease; /* Smooth transition for border color */
+        }
+
+        /* Style for input field when focused */
+        .login-form input[type="password"]:focus {
+            border-color: #e94d58; /* Accent color for focus state */
+        }
+
+        /* Style for submit button */
+        .login-form input[type="submit"] {
+            width: 100%; /* Full width */
+            padding: 10px; /* Padding inside the button */
+            background-color: #e94d58; /* Accent color for button background */
+            color: #fff; /* Text color */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Cursor style */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        /* Style for submit button when hovered */
+        .login-form input[type="submit"]:hover {
+            background-color: #d44152; /* Darker accent color on hover */
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <h2 class="title">Game Menu</h2>
-        <div class="game-menu">
-            <a href="./Games/game1.html" class="game-link">Game 1</a>
-            <a href="./Game2/game2.html" class="game-link">Game 2</a>
-            <!-- Add more links for other games if needed -->
+        <div class="content">
+            <form id="loginForm" class="login-form">
+                <input type="password" name="password" placeholder="Your birthday"><br><br>
+                <input type="submit" value="Authenticate">
+            </form>
+            <!-- Heart shapes and other content -->
+            <div class="heart x1"></div>
+        <div class="heart x2"></div>
+        <div class="heart x3"></div>
+        <div class="heart x4"></div>
+        <div class="heart x5"></div>
+        <div class="altheart x6"></div>
         </div>
     </div>
+    <script src="passwordCheck.js"></script>
 </body>
 </html>

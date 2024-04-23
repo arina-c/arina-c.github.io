@@ -28,15 +28,20 @@ document.addEventListener("DOMContentLoaded", () => {
         question.innerHTML = " ";
         img.src = "../Assets/Game3Assets/right-yes.png";
         backBtn.style.display = "inline-block"; // Show the Back button
+        setTimeout(() => {
+            img.src = "../Assets/Game3Assets/FingerPrint.png";
+        }, 2000);
     });
 
-    function startHoldTimer() {
+    function startHoldTimer(event) {
+        event.preventDefault(); // Prevent default browser behavior
         holdTimer = setTimeout(() => {
             img.src = "../Assets/Game3Assets/Marriage.png";
         }, 3000);
     }
 
-    function cancelHoldTimer() {
+    function cancelHoldTimer(event) {
+        event.preventDefault(); // Prevent default browser behavior
         clearTimeout(holdTimer);
     }
 });

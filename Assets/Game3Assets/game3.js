@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             img.src = "../Assets/Game3Assets/FingerPrint.png";
         }, 2000);
+        setTimeout(() => {
+            question.innerHTML= "Move finger higher or lower if shit dont work 😓"
+        }, 10000);
     });
 
     fingerBtn.addEventListener("mousedown", startHoldTimer);
@@ -31,6 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             img.src = "../Assets/Game3Assets/FingerPrint.png";
         }, 2000);
+        setTimeout(() => {
+            question.innerHTML= "Move finger higher or lower if shit dont work 😓"
+        }, 10000);
     });
 
     function startHoldTimer(event) {
